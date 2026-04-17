@@ -86,7 +86,7 @@
       class="py-12 md:py-20 px-6 md:px-20 bg-gray-900 text-white flex flex-col lg:flex-row gap-10 items-center"
     >
       <div class="w-full lg:w-1/2 h-64 md:h-96 bg-gray-700">
-        <img src="/img/dangbiet.jpg" alt="" class="w-full h-full" />
+        <img src="/img/cokhi.jpg" alt="" class="w-full h-full" />
       </div>
 
       <div class="w-full lg:w-1/2">

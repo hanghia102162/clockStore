@@ -60,25 +60,51 @@ const watches = [
   {
     name: "Vanguard Chrono",
     price: "52.400 USD",
-    image: "https://images.unsplash.com/photo-1523275335684-37898b6baf30",
+    image: "/img/nam1.jpg",
   },
 
   {
     name: "Royal Heritage",
     price: "46.000 USD",
-    image: "https://images.unsplash.com/photo-1509048191080-d2984bad6ae5",
+    image: "/img/nam2.jpg",
   },
 
-  // {
-  //   name: "Abyssal Deep",
-  //   price: "38.900 USD",
-  //   image: "https://images.unsplash.com/photo-1547996160-81dfa63595aa",
-  // },
+  {
+    name: "Abyssal Deep",
+    price: "38.900 USD",
+    image: "/img/nam3.jpg",
+  },
 
   {
     name: "Lunar Phase",
     price: "53.900 USD",
-    image: "https://images.unsplash.com/photo-1524805444758-089113d48a6d",
+    image: "/img/nam4.jpg",
+  },
+  {
+    name: "Abyssal Deep",
+    price: "38.900 USD",
+    image: "/img/nam5.jpg",
+  },
+
+  {
+    name: "Lunar Phase",
+    price: "53.900 USD",
+    image: "/img/nam6.jpg",
+  },
+  {
+    name: "Lunar Phase",
+    price: "53.900 USD",
+    image: "/img/nam7.jpg",
+  },
+  {
+    name: "Lunar Phase",
+    price: "53.900 USD",
+    image: "/img/nam8.jpg",
+  },
+  {
+    name: "Lunar Phase",
+    price: "53.900 USD",
+    image: "/img/nam9.jpg",
   },
 ];
 </script>

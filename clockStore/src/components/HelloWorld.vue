@@ -3,7 +3,7 @@
     <!-- HERO -->
     <section class="h-screen relative flex items-center">
       <img
-        src="/img/82d77da87b578e9eec561a69b45d3922.jpg"
+        src="/img/nam8.jpg"
         class="absolute inset-0 w-full h-full object-cover object-left object-top scale-x-[-1]"
       />
 
@@ -15,17 +15,29 @@
             Thành lập năm 1894 — Genève
           </h2>
 
-          <h1 class="text-6xl md:text-7xl font-bold leading-tight mb-6">
+          <h1
+            data-aos="fade-up"
+            data-aos-duration="2000"
+            class="text-6xl md:text-7xl font-bold leading-tight mb-6"
+          >
             Nhịp đập của <br />
             <span class="text-yellow-400 italic">Sự hoàn hảo</span>
           </h1>
 
-          <p class="max-w-lg mb-8 text-gray-200">
+          <p
+            class="max-w-lg mb-8 text-gray-200"
+            data-aos="fade-up"
+            data-aos-duration="2000"
+          >
             Xin giới thiệu Grand Complication No. 7. Một bản giao hưởng của 418
             chi tiết được hoàn thiện thủ công.
           </p>
 
-          <button class="bg-yellow-400 text-black px-8 py-4 uppercase text-sm">
+          <button
+            class="bg-yellow-400 text-black px-8 py-4 uppercase text-sm"
+            data-aos="zoom-in"
+            data-aos-duration="2000"
+          >
             Vui lòng liên hệ riêng để hỏi thêm thông tin.
           </button>
         </div>
@@ -195,7 +207,18 @@
 </template>
 
 <script setup>
-import { ref } from "vue";
+import { ref, onMounted } from "vue";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+onMounted(() => {
+  if (window.innerWidth > 768) {
+    AOS.init({
+      once: false,
+      duration: 1000,
+    });
+  }
+});
 
 const email = ref("");
 
@@ -215,7 +238,7 @@ const collections = [
   {
     title: "Biến Chứng Thiên Văn ",
     desc: "Lấy cảm hứng từ chuyển động mặt trăng",
-    image: "https://picsum.photos/500/400?2",
+    image: "/img/4.jpg",
   },
   {
     title: "Di Sản Vàng  ",

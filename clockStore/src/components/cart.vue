@@ -83,14 +83,14 @@ const cart = ref([
     desc: "REF. 4260 - HẾT HÀNG GIỚI HẠN",
     price: 245000000,
     quantity: 1,
-    image: "https://via.placeholder.com/150",
+    image: "/img/nam1.jpg",
   },
   {
     name: "Royal Heritage",
     desc: "REF. 7405 - THIẾT KẾ ĐẶC BIỆT",
     price: 189500000,
     quantity: 1,
-    image: "https://via.placeholder.com/150",
+    image: "/img/nam2.jpg",
   },
 ]);
 
@@ -98,22 +98,22 @@ const products = ref([
   {
     name: "Hộp Xoay Đồng Hồ",
     price: 12000000,
-    image: "https://via.placeholder.com/200",
+    image: "/img/nam1.jpg",
   },
   {
     name: "Dây Da Heritage",
     price: 4200000,
-    image: "https://via.placeholder.com/200",
+    image: "/img/nam2.jpg",
   },
   {
     name: "Eclipse Moonphase",
     price: 30000000,
-    image: "https://via.placeholder.com/200",
+    image: "/img/nam3.jpg",
   },
   {
     name: "Kính Lúp Horology Kit",
     price: 2800000,
-    image: "https://via.placeholder.com/200",
+    image: "/img/nam4.jpg",
   },
 ]);
 
