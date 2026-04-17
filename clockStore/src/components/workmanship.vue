@@ -1,7 +1,9 @@
 <template>
-  <div class="font-serif text-gray-800">
+  <div class="text-gray-800">
     <!-- HERO -->
-    <section class="min-h-screen bg-gray-200 flex items-center px-6 md:px-20">
+    <section
+      class="min-h-screen bg-[url('https://images.unsplash.com/photo-1523275335684-37898b6baf30')] bg-cover bg-center flex items-center px-6 md:px-20"
+    >
       <div class="max-w-xl">
         <p class="text-yellow-600 tracking-widest text-sm mb-4">
           Tinh Hoa & Linh Hồn
@@ -83,7 +85,9 @@
     <section
       class="py-12 md:py-20 px-6 md:px-20 bg-gray-900 text-white flex flex-col lg:flex-row gap-10 items-center"
     >
-      <div class="w-full lg:w-1/2 h-64 md:h-96 bg-gray-700"></div>
+      <div class="w-full lg:w-1/2 h-64 md:h-96 bg-gray-700">
+        <img src="/img/dangbiet.jpg" alt="" class="w-full h-full" />
+      </div>
 
       <div class="w-full lg:w-1/2">
         <h2 class="text-2xl md:text-4xl text-yellow-500 mb-6">
