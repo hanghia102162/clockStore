@@ -10,7 +10,7 @@
       <div class="absolute inset-0 bg-black/50"></div>
 
       <div class="flex items-center min-h-screen">
-        <div class="relative z-10 max-w-5xl mx-auto text-white px-6 ml-30">
+        <div class="relative z-10 max-w-5xl mx-auto text-white px-6 md:ml-30">
           <h2 class="uppercase tracking-widest mb-4 text-sm">
             Thành lập năm 1894 — Genève
           </h2>
@@ -21,7 +21,9 @@
             class="text-6xl md:text-7xl font-bold leading-tight mb-6"
           >
             Nhịp đập của <br />
-            <span class="text-yellow-400 italic">Sự hoàn hảo</span>
+            <span class="text-yellow-400 text-3xl md:text-7xl italic"
+              >Sự hoàn hảo</span
+            >
           </h1>
 
           <p

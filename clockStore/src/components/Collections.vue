@@ -26,7 +26,7 @@
 
     <!-- FILTER -->
     <div
-      class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 py-6 flex justify-between text-xs sm:text-sm"
+      class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 py-6 flex justify-between items-center text-xs sm:text-sm"
     >
       <div class="flex gap-6">
         <button
@@ -43,6 +43,16 @@
         <button @click="handelOpenNu" class="hover:text-yellow-400">
           Đồng hồ nữ
         </button>
+        <select
+          class="px-4 py-2 bg-[#1f2223] rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-400"
+        >
+          <option>Quý tộc</option>
+          <option>Lịch lãm</option>
+          <option>Pháp</option>
+          <option>Thụy Điển</option>
+          <option>Hy Lạp</option>
+          <option>Bình dân</option>
+        </select>
       </div>
 
       <span class="text-gray-400"> Newest Releases </span>
