@@ -148,9 +148,9 @@
         <div class="flex gap-4 md:gap-6">
           <span class="text-yellow-600 text-xl md:text-2xl">1884</span>
           <div>
-            <h3 class="text-lg md:text-xl">The Founding</h3>
+            <h3 class="text-lg md:text-xl">Thành lập</h3>
             <p class="text-gray-600 text-sm md:text-base">
-              First workshop established.
+              Xưởng chế tác đầu tiên được thành lập.
             </p>
           </div>
         </div>
@@ -158,9 +158,9 @@
         <div class="flex gap-4 md:gap-6">
           <span class="text-yellow-600 text-xl md:text-2xl">1945</span>
           <div>
-            <h3 class="text-lg md:text-xl">First Complication</h3>
+            <h3 class="text-lg md:text-xl">Cơ chế phức tạp đầu tiên</h3>
             <p class="text-gray-600 text-sm md:text-base">
-              Perpetual calendar introduced.
+              Ra mắt lịch vạn niên (Perpetual Calendar).
             </p>
           </div>
         </div>
@@ -168,9 +168,9 @@
         <div class="flex gap-4 md:gap-6">
           <span class="text-yellow-600 text-xl md:text-2xl">2012</span>
           <div>
-            <h3 class="text-lg md:text-xl">Magnetic Resistance</h3>
+            <h3 class="text-lg md:text-xl">Kháng từ</h3>
             <p class="text-gray-600 text-sm md:text-base">
-              Advanced anti-magnetic tech.
+              Phát triển công nghệ chống từ tiên tiến.
             </p>
           </div>
         </div>

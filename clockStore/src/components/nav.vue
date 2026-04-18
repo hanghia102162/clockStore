@@ -21,12 +21,45 @@
           class="hover:text-yellow-600 cursor-pointer"
           >TAY NGHỀ</a
         >
+
         <!-- <a class="hover:text-yellow-600">KHO LƯU TRỮ</a> -->
       </nav>
 
-      <div class="flex gap-4 text-sm">
+      <div class="md:flex hidden gap-4 text-sm">
         <button @click="handelCart">Cart</button>
         <button @click="handleAccount">Account</button>
+      </div>
+
+      <div class="relative md:hidden">
+        <!-- ICON -->
+        <button class="text-xl" @click="toggleMenu">☰</button>
+
+        <!-- MENU (HIỆN NGAY DƯỚI ICON) -->
+        <div
+          v-if="isOpen"
+          class="absolute right-0 cursor-pointer mt-2 w-48 bg-white shadow-lg rounded-lg p-3 flex flex-col gap-2 text-sm z-50"
+        >
+          <a @click="handelHome" class="cursor-pointer hover:text-yellow-600"
+            >TRANG CHỦ</a
+          >
+          <a
+            @click="handleCollections"
+            class="cursor-pointer hover:text-yellow-600"
+            >SẢN PHẨM</a
+          >
+          <a
+            @click="handelWorkmanship"
+            class="cursor-pointer hover:text-yellow-600"
+            >TAY NGHỀ</a
+          >
+          <hr />
+          <a @click="handelCart" class="cursor-pointer hover:text-yellow-600"
+            >Cart</a
+          >
+          <a @click="handleAccount" class="cursor-pointer hover:text-yellow-600"
+            >Account</a
+          >
+        </div>
       </div>
     </div>
   </header>
@@ -55,5 +88,10 @@ const handelWorkmanship = () => {
 };
 const handelCart = () => {
   emit("clickCart");
+};
+
+const isOpen = ref(false);
+const toggleMenu = () => {
+  isOpen.value = !isOpen.value;
 };
 </script>

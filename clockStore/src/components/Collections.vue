@@ -71,9 +71,14 @@
 
           <p class="text-gray-400 text-xs sm:text-sm">${{ watch.price }}</p>
 
-          <button class="text-yellow-400 text-xs sm:text-sm hover:underline">
-            Liên hệ báo giá
-          </button>
+          <div class="w-full flex justify-between">
+            <button class="text-yellow-400 text-xs sm:text-sm hover:underline">
+              Liên hệ
+            </button>
+            <button class="text-yellow-400 text-xs sm:text-sm hover:underline">
+              Thêm vào giỏ hàng
+            </button>
+          </div>
         </div>
       </div>
 
