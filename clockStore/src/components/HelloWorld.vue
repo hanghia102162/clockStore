@@ -212,12 +212,11 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 
 onMounted(() => {
-  if (window.innerWidth > 768) {
-    AOS.init({
-      once: false,
-      duration: 1000,
-    });
-  }
+  AOS.init({
+    disable: function () {
+      return window.innerWidth < 768; // mobile thì tắt
+    },
+  });
 });
 
 const email = ref("");
