@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#1f2223] min-h-screen text-gray-200">
+  <div class="bg-[#0b0f1a] min-h-screen text-gray-200">
     <!-- HERO -->
     <!-- <section
       class="relative h-[160px] sm:h-[220px] lg:h-[280px] overflow-hidden"
@@ -64,7 +64,11 @@
       class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 pb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
     >
       <!-- WATCH -->
-      <div v-for="watch in watches" :key="watch.name" class="group">
+      <div
+        v-for="watch in watches"
+        :key="watch.name"
+        class="group p-3 shadow-[0,0,10_rgba(255,255,30,0.3)] duration-500 transition-all hover:text-yellow-500"
+      >
         <div
           class="bg-black h-[200px] sm:h-[220px] lg:h-[240px] flex items-center justify-center overflow-hidden"
         >

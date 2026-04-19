@@ -17,8 +17,8 @@
         </p>
 
         <h1 class="text-4xl font-serif leading-tight">
-          Mastering the <br />
-          Complications of Time.
+          Làm chủ <br />
+          thời gian.
         </h1>
 
         <div class="w-10 h-[2px] bg-yellow-400 mt-4"></div>
@@ -29,15 +29,15 @@
     <div class="w-full md:w-1/2 flex items-center justify-center px-8">
       <div class="w-full max-w-md">
         <!-- Title -->
-        <h2 class="text-3xl font-serif mb-2">The Archive Access</h2>
+        <h2 class="text-3xl font-serif mb-2">Giữ nguyên tên thương hiệu</h2>
         <p class="text-gray-500 mb-8">
-          Enter your credentials to manage your collection.
+          Vui lòng cung cấp thông tin xác thực để quản lý bộ sưu tập của bạn.
         </p>
 
         <!-- Email -->
         <div class="mb-6">
           <label class="text-xs uppercase text-gray-400">
-            Email Identity
+            Định danh thư điện tử
           </label>
           <input
             type="email"
@@ -49,9 +49,9 @@
         <!-- Password -->
         <div class="mb-6">
           <div class="flex justify-between text-xs text-gray-400">
-            <span>Security Key</span>
+            <span>Mã bảo mật</span>
             <span class="cursor-pointer hover:underline text-gray-500">
-              Forgotten your password?
+              Bạn đã quên mật khẩu?
             </span>
           </div>
 
@@ -66,12 +66,12 @@
         <button
           class="w-full bg-yellow-500 text-black py-3 uppercase text-sm tracking-wide hover:bg-yellow-400 transition"
         >
-          Authenticate →
+          Tiến hành xác thực →
         </button>
 
         <!-- Divider -->
         <div class="text-center text-gray-400 text-xs my-6">
-          OR CONNECT WITH
+          Hoặc tiếp tục thông qua
         </div>
 
         <!-- Social -->
@@ -82,12 +82,19 @@
 
         <!-- Footer -->
         <div class="flex justify-between mt-8 text-xs text-gray-400">
-          <span>New to the Maison?</span>
+          <button @click="handleBack()">Quay lại</button>
           <span class="text-yellow-500 cursor-pointer">
-            Request an account
+            Gửi yêu cầu đăng ký tài khoản
           </span>
         </div>
       </div>
     </div>
   </div>
 </template>
+<script setup>
+const emit = defineEmits(["back"]);
+
+const handleBack = () => {
+  emit("back");
+};
+</script>

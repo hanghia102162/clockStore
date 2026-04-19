@@ -3,7 +3,11 @@
     class="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-10 pb-20 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8"
   >
     <!-- WATCH -->
-    <div v-for="watch in watches" :key="watch.name" class="group">
+    <div
+      v-for="watch in watches"
+      :key="watch.name"
+      class="group hover:text-yellow-500"
+    >
       <div
         class="bg-black h-[200px] sm:h-[220px] lg:h-[240px] flex items-center justify-center overflow-hidden"
       >

@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans text-gray-800">
+  <div class="font-sans bg-[#111827] text-gray-800">
     <!-- HERO -->
     <section class="h-screen relative flex items-center">
       <img
@@ -48,7 +48,7 @@
 
     <!-- COLLECTIONS -->
     <section class="py-24 max-w-7xl mx-auto px-6">
-      <h2 class="text-4xl font-bold mb-16">Bộ sưu tập hiện tại</h2>
+      <h2 class="text-4xl font-bold mb-16 text-white">Bộ sưu tập hiện tại</h2>
 
       <div class="grid md:grid-cols-3 gap-10">
         <div
@@ -112,7 +112,7 @@
     </section>
 
     <!-- CRAFT SECTION -->
-    <section class="bg-black text-white py-28">
+    <section class="bg-[#0b0f1a] text-white py-28">
       <div
         class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 px-6 items-center"
       >
@@ -146,17 +146,17 @@
     <!-- PRODUCTS -->
     <section class="py-24">
       <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-4xl font-bold mb-12">Tuyển Chọn Mới Nhất</h2>
+        <h2 class="text-4xl font-bold mb-12 text-white">Tuyển Chọn Mới Nhất</h2>
 
         <div class="grid md:grid-cols-4 gap-10 pb-10">
           <div
             v-for="product in products"
             :key="product.name"
-            class="border p-6"
+            class="border p-6 hover:scaler-1.1 hover:translate-y-[-5px] duration-500 transition-all hover:text-yellow-500"
           >
             <img :src="product.image" class="w-full h-64 object-cover mb-6" />
 
-            <h3 class="text-xl font-bold">
+            <h3 class="text-xl font-bold text-white">
               {{ product.name }}
             </h3>
 
@@ -175,18 +175,18 @@
     </section>
 
     <!-- NEWSLETTER -->
-    <section class="bg-gray-100 py-28 text-center">
-      <h2 class="text-4xl font-bold mb-6">Vòng Tròn Nhà Sưu Tầm</h2>
+    <section class="bg-[#0b0f1a] py-28 text-center">
+      <h2 class="text-4xl font-bold mb-6 text-white">Vòng Tròn Nhà Sưu Tầm</h2>
 
-      <p class="max-w-xl mx-auto text-gray-600 mb-8">
+      <p class="max-w-xl mx-auto text-gray-600 mb-8 text-white">
         Thành viên đăng ký sẽ được ưu tiên tiếp cận các phiên bản giới hạn.
       </p>
 
-      <div class="flex justify-center">
+      <div class="flex justify-center text-white">
         <input
           v-model="email"
           placeholder="Địa chỉ email của bạn"
-          class="border p-4 w-80"
+          class="border p-4 w-80 focus:outline-none"
         />
 
         <button @click="submit" class="bg-yellow-400 px-8 py-4">

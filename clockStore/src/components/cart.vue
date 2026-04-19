@@ -1,19 +1,19 @@
 <template>
-  <div class="bg-gray-100 min-h-screen">
+  <div class="bg-[#0b0f1a] min-h-screen">
     <!-- MAIN -->
     <div
       class="max-w-7xl mx-auto p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10"
     >
       <!-- CART -->
       <div class="lg:col-span-2">
-        <h2 class="text-2xl font-semibold mb-6">
+        <h2 class="text-2xl font-semibold mb-6 text-white">
           Giỏ Hàng - Horology Prestige
         </h2>
 
         <div
           v-for="(item, index) in cart"
           :key="index"
-          class="flex gap-6 mb-10 border-b pb-6"
+          class="flex gap-6 mb-10 border-b pb-6 text-white"
         >
           <img :src="item.image" class="w-40 h-40 object-cover" />
 
@@ -34,7 +34,7 @@
         </div>
 
         <!-- RECOMMEND -->
-        <h3 class="mt-12 mb-4 font-semibold">Có thể bạn sẽ thích</h3>
+        <h3 class="mt-12 mb-4 font-semibold text-white">Có thể bạn sẽ thích</h3>
 
         <div class="grid grid-cols-4 gap-4">
           <div v-for="(p, i) in products" :key="i" class="bg-white p-3">

@@ -13,19 +13,34 @@ const opentHelloWord = ref(true);
 const clickCollections = ref(false);
 const clickWorkmanship = ref(false);
 const clickCart = ref(false);
+const header = ref(true);
+const footer = ref(true);
+
+const scrollTop = () => {
+  window.scrollTo({
+    top: 0,
+    behavior: "smooth", // hoặc "auto" nếu không muốn animation
+  });
+};
+
 const OpentLogin = () => {
   opentLogin.value = true;
   opentHelloWord.value = false;
   clickCollections.value = false;
   clickWorkmanship.value = false;
   clickCart.value = false;
+  header.value = false;
+  footer.value = false;
+  scrollTop();
 };
+
 const OpenCollections = () => {
   clickCollections.value = true;
   opentHelloWord.value = false;
   opentLogin.value = false;
   clickWorkmanship.value = false;
   clickCart.value = false;
+  scrollTop();
 };
 const OpentHelloWord = () => {
   opentHelloWord.value = true;
@@ -33,6 +48,9 @@ const OpentHelloWord = () => {
   clickCollections.value = false;
   clickWorkmanship.value = false;
   clickCart.value = false;
+  header.value = true;
+  footer.value = true;
+  scrollTop();
 };
 const OpenWorkmanship = () => {
   clickWorkmanship.value = true;
@@ -40,6 +58,7 @@ const OpenWorkmanship = () => {
   opentLogin.value = false;
   clickCollections.value = false;
   clickCart.value = false;
+  scrollTop();
 };
 const OpenCart = () => {
   clickCart.value = true;
@@ -47,6 +66,7 @@ const OpenCart = () => {
   opentHelloWord.value = false;
   opentLogin.value = false;
   clickCollections.value = false;
+  scrollTop();
 };
 </script>
 
@@ -57,11 +77,12 @@ const OpenCart = () => {
     @clickHome="OpentHelloWord"
     @clickWorkmanship="OpenWorkmanship"
     @clickCart="OpenCart"
+    v-show="header"
   />
   <HelloWorld v-show="opentHelloWord" />
-  <Login v-show="opentLogin" />
+  <Login v-show="opentLogin" @back="OpentHelloWord" />
   <Collections v-show="clickCollections" />
   <Workmanship v-show="clickWorkmanship" />
   <Cart v-show="clickCart" />
-  <Footer />
+  <Footer v-show="footer" />
 </template>
