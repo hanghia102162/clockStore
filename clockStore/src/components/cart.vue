@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-[#0b0f1a] min-h-screen">
+  <div class="bg-[#0d1b2a] min-h-screen">
     <!-- MAIN -->
     <div
       class="max-w-7xl mx-auto p-4 sm:p-6 grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-10"
