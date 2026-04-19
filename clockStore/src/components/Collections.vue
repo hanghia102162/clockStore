@@ -55,7 +55,7 @@
         </select>
       </div>
 
-      <span class="text-gray-400"> Newest Releases </span>
+      <span class="text-gray-400 sm:hidden"> Newest Releases </span>
     </div>
 
     <!-- PRODUCTS -->
