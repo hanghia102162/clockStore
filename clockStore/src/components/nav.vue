@@ -64,31 +64,52 @@
 
       <div class="relative md:hidden">
         <!-- ICON -->
-        <button class="text-xl" @click="toggleMenu">☰</button>
+        <button class="text-xl" @click.stop="toggleMenu()">☰</button>
 
         <!-- MENU (HIỆN NGAY DƯỚI ICON) -->
         <div
           v-if="isOpen"
-          class="absolute right-0 cursor-pointer mt-2 w-48 bg-white shadow-lg rounded-lg p-3 flex flex-col gap-2 text-sm z-50 text-black"
+          class="absolute right-0 cursor-pointer mt-2 w-48 bg-[#0d1b2a] shadow-lg rounded-lg p-3 flex flex-col gap-2 text-sm z-50 text-white"
         >
-          <a @click="handelHome" class="cursor-pointer hover:text-yellow-600"
+          <a
+            @click="
+              handelHome();
+              isOpen = false;
+            "
+            class="cursor-pointer hover:text-yellow-600"
             >TRANG CHỦ</a
           >
           <a
-            @click="handleCollections"
+            @click="
+              handleCollections();
+              isOpen = false;
+            "
             class="cursor-pointer hover:text-yellow-600"
             >SẢN PHẨM</a
           >
           <a
-            @click="handelWorkmanship"
+            @click="
+              handelWorkmanship();
+              isOpen = false;
+            "
             class="cursor-pointer hover:text-yellow-600"
             >TAY NGHỀ</a
           >
           <hr />
-          <a @click="handelCart" class="cursor-pointer hover:text-yellow-600"
+          <a
+            @click="
+              handelCart();
+              isOpen = false;
+            "
+            class="cursor-pointer hover:text-yellow-600"
             >Cart</a
           >
-          <a @click="handleAccount" class="cursor-pointer hover:text-yellow-600"
+          <a
+            @click="
+              handleAccount();
+              isOpen = false;
+            "
+            class="cursor-pointer hover:text-yellow-600"
             >Account</a
           >
         </div>
