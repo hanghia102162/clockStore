@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans bg-[#111827] text-gray-800">
+  <div class="font-sans bg-[#111827] text-gray-800 p-4">
     <!-- HERO -->
     <section class="h-screen relative flex items-center">
       <img

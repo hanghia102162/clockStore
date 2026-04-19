@@ -36,7 +36,7 @@
         <!-- RECOMMEND -->
         <h3 class="mt-12 mb-4 font-semibold text-white">Có thể bạn sẽ thích</h3>
 
-        <div class="grid grid-cols-4 gap-4">
+        <div class="grid gap-4 grid-cols-2 md:grid-cols-4">
           <div v-for="(p, i) in products" :key="i" class="bg-white p-3">
             <img :src="p.image" class="w-full h-32 object-cover" />
             <p class="mt-2 text-sm">{{ p.name }}</p>
