@@ -2,7 +2,7 @@
   <div class="text-gray-800">
     <!-- HERO -->
     <section
-      class="min-h-screen bg-[url('/img/abstract-textured-backgound.jpg')] lg:bg-[url('https://images.unsplash.com/photo-1523275335684-37898b6baf30')] bg-cover bg-center flex items-center px-6 md:px-20"
+      class="min-h-screen bg-[url('/img/abstract-textured-backgound.jpg')] xl:bg-[url('https://images.unsplash.com/photo-1523275335684-37898b6baf30')] bg-cover bg-center flex items-center px-6 md:px-20"
     >
       <div class="max-w-xl">
         <p class="text-yellow-600 tracking-widest text-sm mb-4">
