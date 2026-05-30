@@ -1,5 +1,5 @@
 <template>
-  <div class="font-sans bg-[#111827] text-gray-800 p-4">
+  <div class="font-sans bg-[#0b1120] text-gray-800">
     <!-- HERO -->
     <section class="h-screen relative flex items-center">
       <img
@@ -47,7 +47,9 @@
     </section>
 
     <!-- COLLECTIONS -->
-    <section class="py-24 max-w-7xl mx-auto px-6">
+    <section
+      class="p-5 lg:py-24 lg:px-29 bg-[#0b1120] min-w-[100%] max-w-7xl mx-auto"
+    >
       <h2 class="text-4xl font-bold mb-16 text-white">Bộ sưu tập hiện tại</h2>
 
       <div class="grid md:grid-cols-3 gap-10">
@@ -112,10 +114,8 @@
     </section>
 
     <!-- CRAFT SECTION -->
-    <section class="bg-[#0b0f1a] text-white py-28">
-      <div
-        class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 px-6 items-center"
-      >
+    <section class="bg-[#0b0f1a] min-w-[100%] text-white p-5 lg:py-28">
+      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-16 items-center">
         <img
           src="/img/56615e3f81e281f4285e08ea7b7182ed.jpg"
           class="grayscale"
@@ -126,7 +126,7 @@
             NGHỆ THUẬT CHẾ TÁC THỤY SĨ
           </h2>
 
-          <h3 class="text-5xl font-bold mb-6">
+          <h3 class="text-4xl md:text-5xl font-bold mb-6">
             Tinh Hoa Cơ Khí Ẩn Sau Thời Gian
           </h3>
 
@@ -144,38 +144,86 @@
     </section>
 
     <!-- PRODUCTS -->
-    <section class="py-24">
-      <div class="max-w-7xl mx-auto px-6">
-        <h2 class="text-4xl font-bold mb-12 text-white">Tuyển Chọn Mới Nhất</h2>
+    <section class="py-16 md:py-24 bg-[#0b1120] px-5">
+      <div class="max-w-7xl mx-auto md:px-5 md:px-0">
+        <!-- TITLE -->
+        <div
+          class="flex flex-col md:flex-row md:items-end justify-between gap-4 mb-10 md:mb-14"
+        >
+          <div>
+            <p
+              class="uppercase tracking-[3px] text-yellow-500 text-[10px] md:text-xs mb-2"
+            >
+              Swiss Collection
+            </p>
 
-        <div class="grid md:grid-cols-4 gap-10 pb-10">
+            <h2 class="text-2xl md:text-5xl font-bold text-white leading-tight">
+              Tuyển Chọn Mới Nhất
+            </h2>
+          </div>
+
+          <button
+            class="hidden md:block text-sm text-gray-400 hover:text-yellow-500 transition"
+          >
+            Xem tất cả →
+          </button>
+        </div>
+
+        <!-- PRODUCTS -->
+        <div
+          class="grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-4 gap-4 md:gap-7"
+        >
           <div
             v-for="product in products"
             :key="product.name"
-            class="border p-6 hover:scaler-1.1 hover:translate-y-[-5px] duration-500 transition-all hover:text-yellow-500"
+            class="group bg-[#111827] rounded-xl md:rounded-[20px] overflow-hidden border border-white/10 transition-all duration-500 active:scale-[0.98] md:hover:-translate-y-2 md:hover:border-yellow-500/40"
           >
-            <img :src="product.image" class="w-full h-64 object-cover mb-6" />
+            <!-- IMAGE -->
+            <div class="relative overflow-hidden">
+              <img
+                :src="product.image"
+                class="w-full h-[200px] sm:h-[240px] md:h-[320px] object-cover"
+              />
 
-            <h3 class="text-xl font-bold text-white">
-              {{ product.name }}
-            </h3>
+              <div
+                class="absolute inset-0 bg-gradient-to-t from-black/40 to-transparent"
+              ></div>
 
-            <p class="text-gray-500 mb-4">
-              {{ product.detail }}
-            </p>
+              <span
+                class="absolute top-3 left-3 bg-black/40 text-yellow-400 text-[9px] px-2 py-1 rounded-full"
+              >
+                LIMITED
+              </span>
+            </div>
 
-            <p class="font-bold text-yellow-600">
-              {{ product.price }}
-            </p>
+            <!-- CONTENT -->
+            <div class="p-4 md:p-6">
+              <h3 class="text-base md:text-xl font-semibold text-white mb-1">
+                {{ product.name }}
+              </h3>
 
-            <button class="mt-6 border px-6 py-3 w-full">Khám phá</button>
+              <p class="text-gray-400 text-xs md:text-sm mb-4">
+                {{ product.detail }}
+              </p>
+
+              <div class="flex items-center justify-between">
+                <p class="text-yellow-500 font-bold text-base md:text-2xl">
+                  {{ product.price }}
+                </p>
+
+                <button
+                  class="w-9 h-9 md:w-11 md:h-11 rounded-full border border-white/10 text-white active:scale-95 md:hover:bg-yellow-500 md:hover:text-black transition"
+                >
+                  →
+                </button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
-
     <!-- NEWSLETTER -->
-    <section class="bg-[#0b0f1a] py-28 text-center">
+    <section class="bg-[#0b0f1a] py-28 text-center px-4">
       <h2 class="text-4xl font-bold mb-6 text-white">Vòng Tròn Nhà Sưu Tầm</h2>
 
       <p class="max-w-xl mx-auto text-gray-600 mb-8 text-white">

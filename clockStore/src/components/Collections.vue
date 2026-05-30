@@ -104,12 +104,12 @@
           <h2 class="text-xl sm:text-2xl lg:text-3xl font-serif mb-4">
             Tourbillon
             <br />
-            Vĩnh Cửu Số 1
+            Tourbillon No.1
           </h2>
 
           <p class="text-gray-400 text-xs sm:text-sm leading-relaxed">
-            Tuyệt tác độc nhất của nghệ thuật chế tác thời gian, nổi bật với bộ
-            vỏ bạch kim hoàn thiện thủ công đến từng chi tiết
+            A singular achievement in horological engineering featuring a
+            hand-finished platinum case.
           </p>
         </div>
 
